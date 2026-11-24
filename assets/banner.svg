@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-label="Yaman Alparslan — Electrical &amp; Electronics Engineering Banner">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#131c31"/>
+    </linearGradient>
+
+    <radialGradient id="glow-cyan" cx="80%" cy="42%" r="38%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#0ea5e9" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-amber" cx="65%" cy="72%" r="32%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.13"/>
+      <stop offset="65%" stop-color="#f59e0b" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sine-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="85%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <linearGradient id="pwm-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.78"/>
+      <stop offset="85%" stop-color="#fbbf24" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <linearGradient id="sine-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="scope-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.45"/>
+    </pattern>
+
+    <pattern id="scope-grid-major" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="url(#scope-grid)"/>
+      <path d="M 120 0 L 0 0 0 120" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.35"/>
+    </pattern>
+
+    <filter id="glow-soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-dot" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="banner-clip">
+      <rect x="0" y="0" width="1200" height="320" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <!-- Base dark canvas & oscilloscope grid -->
+    <rect width="1200" height="320" fill="url(#bg-grad)"/>
+    <rect width="1200" height="320" fill="url(#scope-grid-major)"/>
+    <rect width="1200" height="320" fill="url(#glow-cyan)"/>
+    <rect width="1200" height="320" fill="url(#glow-amber)"/>
+
+    <!-- Subtle PCB traces & via nodes (right & top-right) -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.38">
+      <path d="M 860 0 L 860 32 L 892 64 L 1060 64 L 1090 34 L 1200 34" stroke="#1e3a5f" stroke-width="1.5"/>
+      <path d="M 920 0 L 920 22 L 950 52 L 1046 52" stroke="#1e3a5f" stroke-width="1.5"/>
+      <path d="M 1010 320 L 1010 278 L 1044 244 L 1200 244" stroke="#3b2f1e" stroke-width="1.5"/>
+      <path d="M 1060 320 L 1060 292 L 1090 262 L 1200 262" stroke="#1e3a5f" stroke-width="1.5"/>
+      <circle cx="892" cy="64" r="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
+      <circle cx="1046" cy="52" r="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
+      <circle cx="1044" cy="244" r="3" fill="#0f172a" stroke="#f59e0b" stroke-width="1.4"/>
+      <circle cx="1090" cy="262" r="2.5" fill="#0f172a" stroke="#10b981" stroke-width="1.4"/>
+    </g>
+
+    <!-- Oscilloscope reference axis -->
+    <line x1="720" y1="88" x2="1172" y2="88" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.65"/>
+    <line x1="560" y1="224" x2="1172" y2="224" stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.45"/>
+
+    <!-- Glowing Cyan Sine Wave (AC Output / Filtered Bus) -->
+    <path d="M 720 88 C 745 36, 770 36, 795 88 C 820 140, 845 140, 870 88 C 895 36, 920 36, 945 88 C 970 140, 995 140, 1020 88 C 1045 36, 1070 36, 1095 88 C 1120 140, 1145 140, 1170 88 L 1170 88 L 720 88 Z"
+          fill="url(#sine-fill)" opacity="0.75"/>
+    <path d="M 720 88 C 745 36, 770 36, 795 88 C 820 140, 845 140, 870 88 C 895 36, 920 36, 945 88 C 970 140, 995 140, 1020 88 C 1045 36, 1070 36, 1095 88 C 1120 140, 1145 140, 1170 88"
+          fill="none" stroke="url(#sine-grad)" stroke-width="2.6" filter="url(#glow-soft)"/>
+
+    <!-- Amber/Orange SPWM Switching Waveform (lower-right & sweeping across bottom) -->
+    <path d="M 560 224 L 584 224 L 584 198 L 594 198 L 594 224
+             L 618 224 L 618 198 L 636 198 L 636 224
+             L 654 224 L 654 198 L 680 198 L 680 224
+             L 696 224 L 696 198 L 730 198 L 730 224
+             L 744 224 L 744 198 L 774 198 L 774 224
+             L 792 224 L 792 198 L 814 198 L 814 224
+             L 836 224 L 836 198 L 848 198 L 848 224
+             L 872 224 L 872 250 L 884 250 L 884 224
+             L 906 224 L 906 250 L 928 250 L 928 224
+             L 946 224 L 946 250 L 976 250 L 976 224
+             L 992 224 L 992 250 L 1026 250 L 1026 224
+             L 1044 224 L 1044 250 L 1072 250 L 1072 224
+             L 1092 224 L 1092 250 L 1110 250 L 1110 224
+             L 1134 224 L 1134 250 L 1146 250 L 1146 224 L 1172 224"
+          fill="none" stroke="url(#pwm-grad)" stroke-width="2.1" stroke-linejoin="miter" filter="url(#glow-soft)"/>
+
+    <!-- Subtle oscilloscope channel readout -->
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" fill="#64748b">
+      <circle cx="944" cy="24" r="3" fill="#38bdf8"/>
+      <text x="953" y="28">CH1: AC_BUS 230Vrms</text>
+      <circle cx="1076" cy="24" r="3" fill="#f59e0b"/>
+      <text x="1085" y="28">CH2: PWM 100kHz</text>
+    </g>
+
+    <!-- Top Status Pill Badge -->
+    <g>
+      <rect x="48" y="34" width="448" height="30" rx="15" fill="#0b1222" fill-opacity="0.92" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="67" cy="49" r="7.5" fill="#10b981" fill-opacity="0.2"/>
+      <circle cx="67" cy="49" r="4" fill="#10b981" filter="url(#glow-dot)"/>
+      <text x="83" y="53" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11.5" font-weight="600" letter-spacing="0.9" fill="#cbd5e1">
+        ELECTRICAL &amp; ELECTRONICS ENGINEERING · İZMİR, TR
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="48" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-0.8" fill="#f8fafc">
+      Yaman Alparslan
+    </text>
+
+    <!-- Subtitle -->
+    <text x="48" y="164" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="500">
+      <tspan fill="#38bdf8" font-weight="600">Power Electronics</tspan><tspan fill="#94a3b8"> (UPS &amp; DAB) · </tspan><tspan fill="#e2e8f0" font-weight="600">Embedded Systems</tspan><tspan fill="#94a3b8"> (STM32 / ESP32) · </tspan><tspan fill="#38bdf8" font-weight="600">Industrial SCADA &amp; Full-Stack</tspan>
+    </text>
+
+    <!-- Subtle divider line -->
+    <line x1="48" y1="210" x2="520" y2="210" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bottom Tech Pills -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600">
+      <!-- Pill 1: DAB / UPS -->
+      <rect x="48" y="252" width="206" height="34" rx="8" fill="#0b1222" fill-opacity="0.92" stroke="#f59e0b" stroke-opacity="0.45" stroke-width="1.2"/>
+      <text x="151" y="274" text-anchor="middle" fill="#fde68a">⚡ DAB / UPS Converters</text>
+
+      <!-- Pill 2: STM32G474 & ESP32-S3 -->
+      <rect x="266" y="252" width="214" height="34" rx="8" fill="#0b1222" fill-opacity="0.92" stroke="#38bdf8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <text x="373" y="274" text-anchor="middle" fill="#bae6fd">🔧 STM32G474 &amp; ESP32-S3</text>
+
+      <!-- Pill 3: Modbus TCP / SCADA -->
+      <rect x="492" y="252" width="194" height="34" rx="8" fill="#0b1222" fill-opacity="0.92" stroke="#10b981" stroke-opacity="0.45" stroke-width="1.2"/>
+      <text x="589" y="274" text-anchor="middle" fill="#a7f3d0">📡 Modbus TCP / SCADA</text>
+
+      <!-- Pill 4: Next.js 16 & FastAPI -->
+      <rect x="698" y="252" width="204" height="34" rx="8" fill="#0b1222" fill-opacity="0.92" stroke="#818cf8" stroke-opacity="0.45" stroke-width="1.2"/>
+      <text x="800" y="274" text-anchor="middle" fill="#c7d2fe">🌐 Next.js 16 &amp; FastAPI</text>
+
+      <!-- Pill 5: Tescom UPS -->
+      <rect x="914" y="252" width="144" height="34" rx="8" fill="#0b1222" fill-opacity="0.92" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2"/>
+      <text x="986" y="274" text-anchor="middle" fill="#e2e8f0">🏢 Tescom UPS</text>
+    </g>
+
+    <!-- Outer Crisp Frame -->
+    <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="16" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  </g>
+</svg>
