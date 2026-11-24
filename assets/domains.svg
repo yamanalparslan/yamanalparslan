@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" role="img" aria-label="Core Engineering Domains">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+
+    <radialGradient id="glow-amber" cx="12%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-cyan" cx="12%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-emerald" cx="12%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow-violet" cx="12%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="clip-c1"><rect x="4" y="4" width="584" height="156" rx="14"/></clipPath>
+    <clipPath id="clip-c2"><rect x="612" y="4" width="584" height="156" rx="14"/></clipPath>
+    <clipPath id="clip-c3"><rect x="4" y="180" width="584" height="156" rx="14"/></clipPath>
+    <clipPath id="clip-c4"><rect x="612" y="180" width="584" height="156" rx="14"/></clipPath>
+  </defs>
+
+  <!-- CARD 1: Power Electronics & Energy Conversion (Amber/Orange #f59e0b) -->
+  <g clip-path="url(#clip-c1)">
+    <rect x="4" y="4" width="584" height="156" rx="14" fill="url(#card-bg)"/>
+    <rect x="4" y="4" width="584" height="156" rx="14" fill="url(#glow-amber)"/>
+    <rect x="4" y="4" width="584" height="3.5" fill="#f59e0b"/>
+    <rect x="4" y="4" width="4" height="156" fill="#f59e0b"/>
+    <rect x="4.75" y="4.75" width="582.5" height="154.5" rx="14" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+    <rect x="26" y="24" width="32" height="32" rx="8" fill="#f59e0b" fill-opacity="0.14" stroke="#f59e0b" stroke-opacity="0.4"/>
+    <text x="42" y="45" text-anchor="middle" font-size="16">⚡</text>
+    <text x="70" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.5" font-weight="700" fill="#f8fafc">
+      Power Electronics &amp; Energy Conversion
+    </text>
+
+    <text x="26" y="79" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">
+      <tspan x="26" dy="0">Dual Active Bridge (DAB) DC–DC converters, UPS architectures, CC/CV</tspan>
+      <tspan x="26" dy="20">battery management, magnetics, SPICE &amp; Python harmonic/FFT modeling.</tspan>
+    </text>
+
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#fbbf24">
+      <rect x="26" y="122" width="84" height="22" rx="6" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.35"/>
+      <text x="68" y="137" text-anchor="middle">DAB DC-DC</text>
+
+      <rect x="118" y="122" width="110" height="22" rx="6" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.35"/>
+      <text x="173" y="137" text-anchor="middle">UPS &amp; CC/CV</text>
+
+      <rect x="236" y="122" width="90" height="22" rx="6" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.35"/>
+      <text x="281" y="137" text-anchor="middle">Magnetics</text>
+
+      <rect x="334" y="122" width="114" height="22" rx="6" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.35"/>
+      <text x="391" y="137" text-anchor="middle">SPICE / FFT</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Embedded Firmware & Control (Cyan/Blue #38bdf8) -->
+  <g clip-path="url(#clip-c2)">
+    <rect x="612" y="4" width="584" height="156" rx="14" fill="url(#card-bg)"/>
+    <rect x="612" y="4" width="584" height="156" rx="14" fill="url(#glow-cyan)"/>
+    <rect x="612" y="4" width="584" height="3.5" fill="#38bdf8"/>
+    <rect x="612" y="4" width="4" height="156" fill="#38bdf8"/>
+    <rect x="612.75" y="4.75" width="582.5" height="154.5" rx="14" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+    <rect x="634" y="24" width="32" height="32" rx="8" fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8" stroke-opacity="0.4"/>
+    <text x="650" y="45" text-anchor="middle" font-size="16">🎛️</text>
+    <text x="678" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.5" font-weight="700" fill="#f8fafc">
+      Embedded Firmware &amp; Control
+    </text>
+
+    <text x="634" y="79" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">
+      <tspan x="634" dy="0">Bare-metal &amp; RTOS C/C++ on STM32G474 &amp; ESP32-S3, high-res PWM timers,</tspan>
+      <tspan x="634" dy="20">ADC/DAC control loops, hardware protection, probe-rs &amp; KiCad PCB design.</tspan>
+    </text>
+
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#7dd3fc">
+      <rect x="634" y="122" width="84" height="22" rx="6" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="676" y="137" text-anchor="middle">STM32G474</text>
+
+      <rect x="726" y="122" width="80" height="22" rx="6" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="766" y="137" text-anchor="middle">ESP32-S3</text>
+
+      <rect x="814" y="122" width="96" height="22" rx="6" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="862" y="137" text-anchor="middle">PWM / ADC</text>
+
+      <rect x="918" y="122" width="128" height="22" rx="6" fill="#38bdf8" fill-opacity="0.1" stroke="#38bdf8" stroke-opacity="0.35"/>
+      <text x="982" y="137" text-anchor="middle">probe-rs / KiCad</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Industrial SCADA & Solar Telemetry (Emerald #10b981) -->
+  <g clip-path="url(#clip-c3)">
+    <rect x="4" y="180" width="584" height="156" rx="14" fill="url(#card-bg)"/>
+    <rect x="4" y="180" width="584" height="156" rx="14" fill="url(#glow-emerald)"/>
+    <rect x="4" y="180" width="584" height="3.5" fill="#10b981"/>
+    <rect x="4" y="180" width="4" height="156" fill="#10b981"/>
+    <rect x="4.75" y="180.75" width="582.5" height="154.5" rx="14" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+    <rect x="26" y="200" width="32" height="32" rx="8" fill="#10b981" fill-opacity="0.14" stroke="#10b981" stroke-opacity="0.4"/>
+    <text x="42" y="221" text-anchor="middle" font-size="16">📡</text>
+    <text x="70" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.5" font-weight="700" fill="#f8fafc">
+      Industrial SCADA &amp; Solar Telemetry
+    </text>
+
+    <text x="26" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">
+      <tspan x="26" dy="0">250 kW solar inverter &amp; UPS telemetry, Modbus RTU/TCP, RS-485 gateways,</tspan>
+      <tspan x="26" dy="20">PostgreSQL time-series storage, real-time operational dashboards.</tspan>
+    </text>
+
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#6ee7b7">
+      <rect x="26" y="298" width="114" height="22" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="83" y="313" text-anchor="middle">Modbus RTU/TCP</text>
+
+      <rect x="148" y="298" width="76" height="22" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="186" y="313" text-anchor="middle">RS-485</text>
+
+      <rect x="232" y="298" width="96" height="22" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="280" y="313" text-anchor="middle">PostgreSQL</text>
+
+      <rect x="336" y="298" width="110" height="22" rx="6" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.35"/>
+      <text x="391" y="313" text-anchor="middle">250 kW SCADA</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: Full-Stack & Applied AI Systems (Violet/Indigo #818cf8) -->
+  <g clip-path="url(#clip-c4)">
+    <rect x="612" y="180" width="584" height="156" rx="14" fill="url(#card-bg)"/>
+    <rect x="612" y="180" width="584" height="156" rx="14" fill="url(#glow-violet)"/>
+    <rect x="612" y="180" width="584" height="3.5" fill="#818cf8"/>
+    <rect x="612" y="180" width="4" height="156" fill="#818cf8"/>
+    <rect x="612.75" y="180.75" width="582.5" height="154.5" rx="14" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+    <rect x="634" y="200" width="32" height="32" rx="8" fill="#818cf8" fill-opacity="0.14" stroke="#818cf8" stroke-opacity="0.4"/>
+    <text x="650" y="221" text-anchor="middle" font-size="16">🚀</text>
+    <text x="678" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.5" font-weight="700" fill="#f8fafc">
+      Full-Stack &amp; Applied AI Systems
+    </text>
+
+    <text x="634" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#94a3b8">
+      <tspan x="634" dy="0">Production web apps and domain analyzers using Next.js 16, TypeScript,</tspan>
+      <tspan x="634" dy="20">FastAPI, C#/.NET, Cloudflare Workers, D1, and LLM pipelines.</tspan>
+    </text>
+
+    <g font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="11" font-weight="600" fill="#a5b4fc">
+      <rect x="634" y="298" width="90" height="22" rx="6" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.35"/>
+      <text x="679" y="313" text-anchor="middle">Next.js 16</text>
+
+      <rect x="732" y="298" width="74" height="22" rx="6" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.35"/>
+      <text x="769" y="313" text-anchor="middle">FastAPI</text>
+
+      <rect x="814" y="298" width="84" height="22" rx="6" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.35"/>
+      <text x="856" y="313" text-anchor="middle">C# / .NET</text>
+
+      <rect x="906" y="298" width="124" height="22" rx="6" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-opacity="0.35"/>
+      <text x="968" y="313" text-anchor="middle">CF Workers &amp; D1</text>
+    </g>
+  </g>
+</svg>
